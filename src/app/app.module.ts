@@ -13,7 +13,7 @@ import { AppComponent } from '../app/app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,  // Main routing module for app-level routes
-    LayoutModule
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]  // Bootstraps the main app component

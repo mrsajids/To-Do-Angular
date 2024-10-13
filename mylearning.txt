@@ -45,3 +45,13 @@ const routes: Routes = [
 imports: [
   LayoutModule
 ]
+
+
+# create layout component
+add  declarations: [
+    LayoutComponent
+  ],
+in layout module
+
+# BOOSTRAP INSTALLATION
+https://medium.com/@chandantechie/how-to-install-angular-latest-version-and-configure-bootstrap-701a1ad9e4c2
