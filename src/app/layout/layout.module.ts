@@ -7,6 +7,7 @@ import { HeaderComponent } from "./component/header/header.component";
 import { FooterComponent } from "./component/footer/footer.component";
 import { TodolistComponent } from './component/todolist/todolist.component';
 import { TodoformComponent } from './component/todoform/todoform.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +22,8 @@ import { TodoformComponent } from './component/todoform/todoform.component';
   imports: [
     CommonModule,
     RouterModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    FormsModule
   ]
 })
 export class LayoutModule { }

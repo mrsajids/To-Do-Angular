@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrl: './todoform.component.css'
 })
 export class TodoformComponent {
+  todo = {
+    title: '',
+    description: ''
+  }
 
+  onSubmit(form: any) {
+    console.log('form submitted');
+    sessionStorage.setItem('todos', JSON.stringify(this.todo));
+    this.todo = {
+      title: '',
+      description: ''
+    }
+  }
 }
