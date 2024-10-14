@@ -5,6 +5,8 @@ import { RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent } from "./component/header/header.component";
 import { FooterComponent } from "./component/footer/footer.component";
+import { TodolistComponent } from './component/todolist/todolist.component';
+import { TodoformComponent } from './component/todoform/todoform.component';
 
 
 
@@ -12,7 +14,9 @@ import { FooterComponent } from "./component/footer/footer.component";
   declarations: [
     LayoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TodolistComponent,
+    TodoformComponent
   ],
   imports: [
     CommonModule,
