@@ -11,7 +11,7 @@ export class TodoformComponent {
     description: ''
   }
 
-  onSubmit(form: any) {
+  onSubmit() {
     console.log('form submitted');
     sessionStorage.setItem('todos', JSON.stringify(this.todo));
     this.todo = {

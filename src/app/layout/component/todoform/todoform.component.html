@@ -1,21 +1,33 @@
 <div class="row">
     <div class="col-md-6">
-        <form #myform="ngForm" (ngSubmit)="onSubmit(myform)" id="myform">
+        <form #myform="ngForm" (ngSubmit)="onSubmit()" id="myform">
             <div class="mb-4">
                 <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title" name="title" placeholder="Add Title" minlength="5"
-                    [(ngModel)]="todo.title">
-                <!-- <div *ngIf="myform.controls.title?.invalid && myform.controls.title?.touched">
-                    title is required.
-                </div> -->
+                <input type="text" class="form-control" id="title" #title="ngModel" name="title" placeholder="Add Title"
+                    minlength="5" [(ngModel)]="todo.title" required>
+                <div *ngIf="title.touched && title.errors?.['required']" class="text-danger">
+                    Title is required.
+                </div>
+                <div *ngIf="title.touched && title.errors?.['minlength']" class="text-danger">
+                    It should be more than 5.
+                </div>
             </div>
             <div class="mb-4">
                 <label for="description" class="form-label">Description</label>
-                <textarea class="form-control" id="description" name="description" rows="2"
-                    placeholder="Add Description" [(ngModel)]="todo.description"></textarea>
+                <textarea class="form-control" id="description" #description="ngModel" name="description" rows="2"
+                    placeholder="Add Description" [(ngModel)]="todo.description" required></textarea>
+                <div *ngIf="description.touched && description.errors?.['required']" class="text-danger">
+                    Description is required.
+                </div>
             </div>
+
             <div class="mb-4">
-                <button type="submit" class="btn btn-dark px-5">Add</button>
+                <button type="submit" [disabled]="myform.invalid" class="btn btn-dark px-5">Add</button>
+            </div>
+            <div class="text-end">
+                <div class="badge bg-success text-end">
+                    template form
+                </div>
             </div>
         </form>
     </div>
