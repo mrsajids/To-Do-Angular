@@ -6,6 +6,7 @@ import { LoginRoutingModule } from './login-routing.module';
 import { RouterModule } from '@angular/router';
 import { LayoutModule } from '../layout/layout.module';
 import { RegisterComponent } from './register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
 // import { LayoutModule } from '../layout/layout.module';
 
 
@@ -20,7 +21,8 @@ import { RegisterComponent } from './register/register.component';
     CommonModule,
     RouterModule,
     LoginRoutingModule,
-    LayoutModule
+    LayoutModule,
+    ReactiveFormsModule
   ]
 })
 export class LoginModule { }
