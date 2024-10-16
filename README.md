@@ -47,3 +47,6 @@ const routes: Routes = [
 imports: [
   LayoutModule
 ]
+
+# Reactive form 
+https://angular.dev/guide/forms/reactive-forms#import-the-reactiveformsmodule
