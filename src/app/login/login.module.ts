@@ -2,20 +2,25 @@ import { NgModule } from '@angular/core';
 import { CommonModule, JsonPipe } from '@angular/common';
 
 import { LoginComponent } from './login.component';
-
-// import { LoginComponent } from './login.component';
-// import { HeaderComponent } from '../layout/component/header/header.component';
-// import { FooterComponent } from '../layout/component/footer/footer.component';
-// import { RouterModule } from '@angular/router';
+import { LoginRoutingModule } from './login-routing.module';
+import { RouterModule } from '@angular/router';
+import { LayoutModule } from '../layout/layout.module';
+import { RegisterComponent } from './register/register.component';
 // import { LayoutModule } from '../layout/layout.module';
+
 
 
 @NgModule({
   declarations: [
     LoginComponent,
+    RegisterComponent,
+    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    LoginRoutingModule,
+    LayoutModule
   ]
 })
 export class LoginModule { }

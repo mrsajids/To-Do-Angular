@@ -27,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     JsonPipe
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class LayoutModule { }
