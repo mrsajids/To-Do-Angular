@@ -48,5 +48,28 @@ imports: [
   LayoutModule
 ]
 
+
+# BOOSTRAP INSTALLATION
+https://medium.com/@chandantechie/how-to-install-angular-latest-version-and-configure-bootstrap-701a1ad9e4c2
+
+# Routing 
+https://v17.angular.io/guide/router
+
+
+# Reative Forms
+https://angular.dev/guide/forms
+
+
 # Reactive form 
 https://angular.dev/guide/forms/reactive-forms#import-the-reactiveformsmodule
+
+
+# form validation
+https://www.scaler.com/topics/angular/reactive-form-validations-in-angular/
+
+# api call
+Create a service
+import clientmodule and add inn contructor
+create api call function
+add httpClientModule in app.moudle 
+call function()

@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from './layout/layout.module';
 import { AppComponent } from '../app/app.component';
 import { LoginModule } from './login/login.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LoginModule } from './login/login.module';
     BrowserModule,
     AppRoutingModule,  // Main routing module for app-level routes
     LayoutModule,
-    LoginModule
+    LoginModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]  // Bootstraps the main app component
