@@ -10,13 +10,15 @@ export class TodoformComponent {
     title: '',
     description: ''
   }
-
-  onSubmit() {
-    console.log('form submitted');
-    sessionStorage.setItem('todos', JSON.stringify(this.todo));
+  resetForm() {
     this.todo = {
       title: '',
       description: ''
     }
+  }
+  onSubmit() {
+    console.log('form submitted');
+    sessionStorage.setItem('todos', JSON.stringify(this.todo));
+
   }
 }

@@ -1,15 +1,18 @@
-<div class="d-flex" >
-    <div class="card mx-1 shadow" style="width: 18rem;">
+<div class="d-flex flex-wrap ">
+    <!-- ingredient-list.component.html -->
+    @for (item of todo; track item.id) {
+    <div class="card mx-1 shadow m-2" style="width: 18rem;">
         <div class="card-body">
-            <h5 class="card-title">{{this.todo.title}}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{this.todo.description}}</h6>
+            <h5 class="card-title">{{item.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{item.body}}</h6>
             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a> -->
+                    content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a> -->
         </div>
     </div>
+    }
 </div>
-<!-- <div class="text-center" *ngIf="!this.todo.name" style="width: 18rem;">
+<!-- <div class="text-center" *ngIf="!this.todo.name" >
     No Data
 </div> -->
